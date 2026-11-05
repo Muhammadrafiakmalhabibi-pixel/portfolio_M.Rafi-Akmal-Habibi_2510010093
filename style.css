@@ -1,0 +1,395 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fc;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* NAVIGASI */
+.header {
+    background-color: #061b3a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.brand-logo {
+    width: 48px;
+    height: 48px;
+    background: #ffad22;
+    color: #061b3a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.brand h2 {
+    font-size: 19px;
+}
+
+.brand span {
+    font-size: 10px;
+    color: #cbd5e1;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    color: #ffad22;
+}
+
+/* HERO */
+.hero {
+    min-height: 430px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4, 24, 58, 0.95),
+            rgba(4, 24, 58, 0.65)
+        ),
+        url("https://images.unsplash.com/photo-1562774053-701939374585?w=1600")
+        center/cover no-repeat;
+}
+
+.hero-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.hero-text {
+    max-width: 650px;
+    color: white;
+}
+
+.hero-label,
+.section-label {
+    color: #ffad22;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    display: block;
+    color: #36a9ff;
+}
+
+.hero-text p {
+    color: #e2e8f0;
+    font-size: 17px;
+    margin-bottom: 28px;
+}
+
+/* TOMBOL UTAMA */
+.btn-primary {
+    display: inline-block;
+    background: #ffad22;
+    color: #102747;
+    text-decoration: none;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #ffc451;
+    transform: translateY(-3px);
+}
+
+/* JUDUL SECTION */
+.catalog {
+    padding-top: 65px;
+    padding-bottom: 70px;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading span {
+    color: #087bd3;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 32px;
+    color: #09254c;
+    margin: 5px 0;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+/* KARTU KATALOG */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+    border-bottom: 4px solid #1264b1;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.13);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 22px;
+}
+
+.category {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+.orange {
+    background: #fff0d4;
+    color: #c77a00;
+}
+
+.blue {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.purple {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+.green {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: #09254c;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #64748b;
+    min-height: 85px;
+}
+
+/* TOMBOL DETAIL */
+.btn-detail {
+    background: #09254c;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 18px;
+    transition: 0.3s;
+}
+
+.btn-detail:hover {
+    background: #087bd3;
+}
+
+/* TENTANG KAMI */
+.about {
+    background: #e7f1fc;
+    padding: 65px 0;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.about h2 {
+    color: #09254c;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.about p {
+    color: #475569;
+    font-size: 15px;
+}
+
+/* KONTAK */
+.contact {
+    text-align: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.contact h2 {
+    color: #09254c;
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* FOOTER */
+.footer {
+    background: #061b3a;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer h2 {
+    color: #ffad22;
+    margin-bottom: 5px;
+}
+
+.footer p {
+    font-size: 13px;
+    color: #cbd5e1;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 950px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-menu {
+        gap: 15px;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

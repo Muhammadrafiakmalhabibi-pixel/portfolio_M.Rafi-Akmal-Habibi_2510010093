@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Katalog Unit Usaha HMP-TI ITS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER DAN NAVIGASI -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="brand">
+                <div class="brand-logo">H</div>
+                <div>
+                    <h2>HMP-TI ITS</h2>
+                    <span>Himpunan Mahasiswa Teknik Informatika</span>
+                </div>
+            </a>
+
+            <div class="nav-menu">
+                <a href="#beranda">Beranda</a>
+                <a href="#unit-usaha">Unit Usaha</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HALAMAN BERANDA -->
+        <section class="hero" id="beranda">
+
+            <div class="hero-content container">
+
+                <div class="hero-text">
+
+                    <span class="hero-label">
+                        KATALOG DIGITAL HMP-TI ITS
+                    </span>
+
+                    <h1>
+                        Katalog Unit Usaha
+                        <span>HMP-TI ITS</span>
+                    </h1>
+
+                    <p>
+                        Dukung aktivitas mahasiswa dengan berbagai
+                        layanan dan produk berkualitas dari unit
+                        usaha HMP-TI ITS.
+                    </p>
+
+                    <a href="#unit-usaha" class="btn-primary">
+                        Jelajahi Unit Usaha ↓
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- KATALOG UNIT USAHA -->
+        <section class="catalog container" id="unit-usaha">
+
+            <div class="section-heading">
+
+                <span>LAYANAN KAMI</span>
+
+                <h2>Unit Usaha Kami</h2>
+
+                <p>
+                    Empat unit usaha unggulan untuk memenuhi
+                    kebutuhan mahasiswa ITS.
+                </p>
+
+            </div>
+
+            <div class="card-container">
+
+                <!-- UNIT F&B -->
+                <article class="card">
+
+                    <img src="assets/fnb.jpg" alt="Makanan dan minuman">
+
+                    <div class="card-content">
+
+                        <span class="category orange">
+                            FOOD & DRINK
+                        </span>
+
+                        <h3>F&B (Food & Drink)</h3>
+
+                        <p>
+                            Menyediakan berbagai pilihan makanan
+                            dan minuman untuk menemani aktivitas
+                            mahasiswa dengan pilihan yang menarik.
+                        </p>
+
+                        <button
+                            class="btn-detail"
+                            onclick="showDetail('fnb')">
+                            Lihat Detail →
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- UNIT PERCETAKAN -->
+                <article class="card">
+
+                    <img src="assets/percetakan.jpg" alt="Mesin printer dan hasil cetakan">
+
+                    <div class="card-content">
+
+                        <span class="category blue">
+                            PRINTING SERVICE
+                        </span>
+
+                        <h3>Percetakan & Dokumen</h3>
+
+                        <p>
+                            Melayani kebutuhan print, fotokopi,
+                            dan pengetikan dokumen untuk menunjang
+                            kegiatan akademik mahasiswa.
+                        </p>
+
+                        <button
+                            class="btn-detail"
+                            onclick="showDetail('percetakan')">
+                            Lihat Detail →
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- UNIT KONSINYASI -->
+                <article class="card">
+
+                   <img src="assets/konsinyasi.jpg" alt="Produk konsinyasi">
+
+                    <div class="card-content">
+
+                        <span class="category purple">
+                            CONSIGNMENT
+                        </span>
+
+                        <h3>Konsinyasi</h3>
+
+                        <p>
+                            Menyediakan fasilitas titip jual barang
+                            atau produk mahasiswa agar dapat
+                            dipasarkan dengan mudah.
+                        </p>
+
+                        <button
+                            class="btn-detail"
+                            onclick="showDetail('konsinyasi')">
+                            Lihat Detail →
+                        </button>
+
+                    </div>
+
+                </article>
+
+                <!-- UNIT JASA KREATIF -->
+                <article class="card">
+
+                    <img src="assets/kreatif.jpg" alt="Jasa Kreatif">
+                    <div class="card-content">
+
+                        <span class="category green">
+                            CREATIVE SERVICE
+                        </span>
+
+                        <h3>Jasa Kreatif</h3>
+
+                        <p>
+                            Menawarkan layanan desain grafis,
+                            fotografi, dan videografi untuk
+                            berbagai kebutuhan kreatif.
+                        </p>
+
+                        <button
+                            class="btn-detail"
+                            onclick="showDetail('kreatif')">
+                            Lihat Detail →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!-- TENTANG KAMI -->
+        <section class="about" id="tentang">
+
+            <div class="container about-content">
+
+                <div>
+
+                    <span class="section-label">
+                        TENTANG KAMI
+                    </span>
+
+                    <h2>
+                        Berkarya, Berkolaborasi,
+                        dan Berdampak.
+                    </h2>
+
+                </div>
+
+                <p>
+                    Katalog Unit Usaha HMP-TI ITS merupakan
+                    halaman informasi digital yang memperkenalkan
+                    berbagai layanan dan produk dari empat unit
+                    usaha. Melalui katalog ini, mahasiswa dapat
+                    mengenal layanan yang tersedia dengan lebih
+                    mudah dan praktis.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- KONTAK -->
+        <section class="contact container" id="kontak">
+
+            <h2>Butuh Informasi Lebih Lanjut?</h2>
+
+            <p>
+                Hubungi pengurus HMP-TI ITS untuk mendapatkan
+                informasi lebih lanjut mengenai unit usaha.
+            </p>
+
+            <a
+                href="https://its.hmp-ti.or.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-primary">
+                Kunjungi Website HMP-TI ITS
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h2>HMP-TI ITS</h2>
+                <p>Himpunan Mahasiswa Teknik Informatika</p>
+            </div>
+
+            <div>
+                <p>&copy; 2026 HMP-TI ITS.</p>
+                <p>Berkarya • Berkolaborasi • Berdampak</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
